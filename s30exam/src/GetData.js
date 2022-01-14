@@ -43,9 +43,13 @@ function GetData() {
 	const row = data.map((row) => {
 		return [row.first_name, row.last_name, row.email]
 	})
-
+	console.log(error)
 	return (
 		<div className="main">
+			{error.length > 0 ?
+				<p className='error'>{error}</p> : ''
+			}
+
 			<Table title={title} row={row} loading={loading} />
 		</div>
 	);

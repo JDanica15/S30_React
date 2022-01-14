@@ -43,6 +43,12 @@ color: #fff;
 background-color: #343434;
 }
 
+.error {
+  color: #e12d2d;
+    font-weight: bold;
+    font-size: 20px;
+}
+
 table {
   width: 100%;
 }
